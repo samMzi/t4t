@@ -1,0 +1,372 @@
+<app-navbar></app-navbar>
+<div class="container-fluid customExport">
+  <div class="row">
+    <div class="col">
+      <div class="card card-topline-aqua">
+        <div class="card-head">
+          <header>Table With State Save</header>
+          <div class="tools">
+            <a
+              class="fa fa-repeat btn-color box-refresh"
+              href="javascript:;"
+            ></a>
+            <a
+              class="t-collapse btn-color fa fa-chevron-down"
+              href="javascript:;"
+            ></a>
+            <a class="t-close btn-color fa fa-times" href="javascript:;"></a>
+          </div>
+        </div>
+        <div class="card-body ">
+          <div class="table-scrollable">
+            <div
+              id="saveStage_wrapper"
+              class="dataTables_wrapper container-fluid dt-bootstrap4 no-footer"
+            >
+              <div class="row">
+                <div class="col-sm-12 col-md-6">
+                  <div class="dataTables_length" id="saveStage_length">
+                    <label
+                      >Show
+                      <select
+                        name="saveStage_length"
+                        aria-controls="saveStage"
+                        class="form-control form-control-sm"
+                        ><option value="10">10</option
+                        ><option value="25">25</option
+                        ><option value="50">50</option
+                        ><option value="100">100</option></select
+                      >
+                      entries</label
+                    >
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                  <div id="saveStage_filter" class="dataTables_filter">
+                    <label
+                      >Search:<input
+                        type="search"
+                        class="form-control form-control-sm"
+                        placeholder=""
+                        aria-controls="saveStage"
+                    /></label>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12">
+                  <table
+                    id="saveStage"
+                    class="display dataTable no-footer"
+                    style="width: 100%;"
+                    role="grid"
+                    aria-describedby="saveStage_info"
+                  >
+                    <thead>
+                      <tr role="row">
+                        <th
+                          class="sorting_desc"
+                          tabindex="0"
+                          aria-controls="saveStage"
+                          rowspan="1"
+                          colspan="1"
+                          aria-label="Name: activate to sort column ascending"
+                          style="width: 76px;"
+                          aria-sort="descending"
+                        >
+                          Num dossier
+                        </th>
+                        <th
+                          class="sorting"
+                          tabindex="0"
+                          aria-controls="saveStage"
+                          rowspan="1"
+                          colspan="1"
+                          aria-label="Position: activate to sort column ascending"
+                          style="width: 80px;"
+                        >
+                          Expéditeur
+                        </th>
+                        <th
+                          class="sorting"
+                          tabindex="0"
+                          aria-controls="saveStage"
+                          rowspan="1"
+                          colspan="1"
+                          aria-label="Office: activate to sort column ascending"
+                          style="width: 50px;"
+                        >
+                          Destinataire
+                        </th>
+                        <th
+                          class="sorting"
+                          tabindex="0"
+                          aria-controls="saveStage"
+                          rowspan="1"
+                          colspan="1"
+                          aria-label="Age: activate to sort column ascending"
+                          style="width: 76px;"
+                        >
+                          Point de sortie
+                        </th>
+                        <th
+                          class="sorting"
+                          tabindex="0"
+                          aria-controls="saveStage"
+                          rowspan="1"
+                          colspan="1"
+                          aria-label="Start date: activate to sort column ascending"
+                          style="width: 100px;"
+                        >
+                          Point d'entrée
+                        </th>
+                        <th
+                          class="sorting"
+                          tabindex="0"
+                          aria-controls="saveStage"
+                          rowspan="1"
+                          colspan="1"
+                          aria-label="Salary: activate to sort column ascending"
+                          style="width: 112px;"
+                        >
+                          Date d'enlèvement
+                        </th>
+                        <th
+                          class="sorting"
+                          tabindex="0"
+                          aria-controls="saveStage"
+                          rowspan="1"
+                          colspan="1"
+                          aria-label="Salary: activate to sort column ascending"
+                          style="width: 90px;"
+                        >
+                          Date de livraison
+                        </th>
+                        <th
+                          class="sorting"
+                          tabindex="0"
+                          aria-controls="saveStage"
+                          rowspan="1"
+                          colspan="1"
+                          aria-label="Salary: activate to sort column ascending"
+                          style="width: 150px;"
+                        >
+                          Action
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr role="row" class="odd">
+                        <td class="sorting_1">Zorita Serrano</td>
+                        <td>ZODIAC SEATS FRANCE</td>
+                        <td>AZODIAC SEATS TUNISIE</td>
+                        <td>CHARLES DE GAULLE APT/PARIS</td>
+                        <td>TUNIS</td>
+                        <td>08/02/2018 08:45</td>
+                        <td>09/02/2018 20:30</td>
+                        <td>
+                          <button
+                            _ngcontent-qng-c3=""
+                            class="btn btn-primary btn-xs"
+                          >
+                            <i
+                              class="fa fa-file"
+                              aria-hidden="true"
+                              data-toggle="modal"
+                              data-target=".bd-example-modal-lg"
+                            ></i></button
+                          >&nbsp;
+                          <button
+                            _ngcontent-qng-c3=""
+                            class="btn btn-success btn-xs"
+                            data-toggle="modal"
+                            data-target=".bd-SUIVIDOSSIER-modal-lg"
+                          >
+                            <i
+                              class="fa fa-plane"
+                              aria-hidden="true"
+                            ></i></button
+                          >&nbsp;
+                          <button
+                            _ngcontent-qng-c3=""
+                            class="btn btn-danger btn-xs"
+                          >
+                            <i
+                              class="fa fa-upload"
+                              aria-hidden="true"
+                            ></i></button
+                          >&nbsp;
+                          <button
+                            _ngcontent-qng-c3=""
+                            class="btn btn-warning btn-xs"
+                          >
+                            <i class="fa fa-download" aria-hidden="true"></i>
+                          </button>
+                        </td>
+                      </tr>
+                      <tr role="row" class="even">
+                        <td class="sorting_1">Zorita Serrano</td>
+                        <td>ZODIAC SEATS FRANCE</td>
+                        <td>ZODIAC SEATS TUNISIE</td>
+                        <td>CHARLES DE GAULLE APT/PARIS</td>
+                        <td>TUNIS</td>
+                        <td>08/02/2018 08:45</td>
+                        <td>09/02/2018 20:30</td>
+                        <td>
+                          <button
+                            _ngcontent-qng-c3=""
+                            class="btn btn-primary btn-xs"
+                          >
+                            <i
+                              class="fa fa-file"
+                              aria-hidden="true"
+                              data-toggle="modal"
+                              data-target=".bd-example-modal-lg"
+                            ></i></button
+                          >&nbsp;
+                          <button
+                            _ngcontent-qng-c3=""
+                            class="btn btn-success btn-xs"
+                            data-toggle="modal"
+                            data-target=".bd-SUIVIDOSSIER-modal-lg"
+                          >
+                            <i
+                              class="fa fa-plane"
+                              aria-hidden="true"
+                            ></i></button
+                          >&nbsp;
+                          <button
+                            _ngcontent-qng-c3=""
+                            class="btn btn-danger btn-xs"
+                          >
+                            <i
+                              class="fa fa-upload"
+                              aria-hidden="true"
+                            ></i></button
+                          >&nbsp;
+                          <button
+                            _ngcontent-qng-c3=""
+                            class="btn btn-warning btn-xs"
+                          >
+                            <i class="fa fa-download" aria-hidden="true"></i>
+                          </button>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12 col-md-5">
+                  <div
+                    class="dataTables_info"
+                    id="saveStage_info"
+                    role="status"
+                    aria-live="polite"
+                  >
+                    Showing 1 to 10 of 57 entries
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-7">
+                  <div
+                    class="dataTables_paginate paging_simple_numbers"
+                    id="saveStage_paginate"
+                  >
+                    <ul class="pagination">
+                      <li
+                        class="paginate_button page-item previous disabled"
+                        id="saveStage_previous"
+                      >
+                        <a
+                          href="#"
+                          aria-controls="saveStage"
+                          data-dt-idx="0"
+                          tabindex="0"
+                          class="page-link"
+                          >Previous</a
+                        >
+                      </li>
+                      <li class="paginate_button page-item active">
+                        <a
+                          href="#"
+                          aria-controls="saveStage"
+                          data-dt-idx="1"
+                          tabindex="0"
+                          class="page-link"
+                          >1</a
+                        >
+                      </li>
+                      <li class="paginate_button page-item ">
+                        <a
+                          href="#"
+                          aria-controls="saveStage"
+                          data-dt-idx="2"
+                          tabindex="0"
+                          class="page-link"
+                          >2</a
+                        >
+                      </li>
+                      <li class="paginate_button page-item ">
+                        <a
+                          href="#"
+                          aria-controls="saveStage"
+                          data-dt-idx="3"
+                          tabindex="0"
+                          class="page-link"
+                          >3</a
+                        >
+                      </li>
+                      <li class="paginate_button page-item ">
+                        <a
+                          href="#"
+                          aria-controls="saveStage"
+                          data-dt-idx="4"
+                          tabindex="0"
+                          class="page-link"
+                          >4</a
+                        >
+                      </li>
+                      <li class="paginate_button page-item ">
+                        <a
+                          href="#"
+                          aria-controls="saveStage"
+                          data-dt-idx="5"
+                          tabindex="0"
+                          class="page-link"
+                          >5</a
+                        >
+                      </li>
+                      <li class="paginate_button page-item ">
+                        <a
+                          href="#"
+                          aria-controls="saveStage"
+                          data-dt-idx="6"
+                          tabindex="0"
+                          class="page-link"
+                          >6</a
+                        >
+                      </li>
+                      <li
+                        class="paginate_button page-item next"
+                        id="saveStage_next"
+                      >
+                        <a
+                          href="#"
+                          aria-controls="saveStage"
+                          data-dt-idx="7"
+                          tabindex="0"
+                          class="page-link"
+                          >Next</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

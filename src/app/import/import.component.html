@@ -1,0 +1,842 @@
+<app-navbar></app-navbar>
+
+<!-- start page content -->
+<div class="container-fluid customImport">
+  <div class="page-content">
+    <div class="page-bar">
+      <div class="page-title-breadcrumb">
+        <div class="pull-left">
+          <div class="page-title">Import Aérien</div>
+        </div>
+        <ol class="breadcrumb page-breadcrumb pull-right">
+          <li>
+            <i class="fa fa-home"></i>&nbsp;<a
+              class="parent-item"
+              href="index.html"
+              >Home</a
+            >&nbsp;<i class="fa fa-angle-right"></i>
+          </li>
+          <li>
+            <a class="parent-item" href="">Data Tables</a>&nbsp;<i
+              class="fa fa-angle-right"
+            ></i>
+          </li>
+          <li class="active">Export Table</li>
+        </ol>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 col-sm-12">
+        <div class="card card-box">
+          <div class="card-head">
+            <header>LISTE DES DOSSIERS</header>
+            <button
+              id="panel-button"
+              class="mdl-button mdl-js-button mdl-button--icon pull-right"
+              data-upgraded=",MaterialButton"
+            >
+              <i class="material-icons">more_vert</i>
+            </button>
+            <ul
+              class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
+              data-mdl-for="panel-button"
+            >
+              <li class="mdl-menu__item">
+                <i class="material-icons">assistant_photo</i>Action
+              </li>
+              <li class="mdl-menu__item">
+                <i class="material-icons">print</i>Another action
+              </li>
+              <li class="mdl-menu__item">
+                <i class="material-icons">favorite</i>Something else here
+              </li>
+            </ul>
+          </div>
+          <div class="card-body " id="bar-parent">
+            <div class="ng-container">
+              <div class="row"> <div class="col">
+                <table id="exportTable" class="display nowrap" style="width:100%;">
+                  <thead>
+                    <tr>
+                      <th>Num Dossier</th>
+                      <th>Expéditeur</th>
+                      <th>Destinataire</th>
+                      <th>Point de Sortie</th>
+                      <th>Point d'entrée</th>
+                      <th>Date d'enlèvement</th>
+                      <th>Date de livraison</th>
+                      <th>#</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>35AI800103</td>
+                      <td>ZODIAC SEATS FRANCE</td>
+                      <td>ZODIAC SEATS TUNISIE</td>
+                      <td>CHARLES DE GAULLE APT/PARIS</td>
+                      <td>TUNIS</td>
+                      <td>08/02/2018 08:45</td>
+                      <td>09/02/2018 20:30</td>
+                      <td>
+                        <button _ngcontent-qng-c3="" class="btn btn-primary btn-xs">
+                          <i
+                            class="fa fa-file"
+                            aria-hidden="true"
+                            data-toggle="modal"
+                            data-target=".bd-example-modal-lg"
+                          ></i></button
+                        >&nbsp;
+                        <button
+                          _ngcontent-qng-c3=""
+                          class="btn btn-success btn-xs"
+                          data-toggle="modal"
+                          data-target=".bd-SUIVIDOSSIER-modal-lg"
+                        >
+                          <i class="fa fa-plane" aria-hidden="true"></i></button
+                        >&nbsp;
+                        <button _ngcontent-qng-c3="" class="btn btn-danger btn-xs">
+                          <i class="fa fa-upload" aria-hidden="true"></i></button
+                        >&nbsp;
+                        <button _ngcontent-qng-c3="" class="btn btn-warning btn-xs">
+                          <i class="fa fa-download" aria-hidden="true"></i>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>35AI800103</td>
+                      <td>ZODIAC SEATS FRANCE</td>
+                      <td>ZODIAC SEATS TUNISIE</td>
+                      <td>CHARLES DE GAULLE APT/PARIS</td>
+                      <td>TUNIS</td>
+                      <td>08/02/2018 08:45</td>
+                      <td>09/02/2018 20:30</td>
+                      <td>
+                        <button
+                          _ngcontent-qng-c3=""
+                          class="btn btn-primary btn-xs"
+                          data-toggle="modal"
+                          data-target=".bd-example-modal-lg"
+                        >
+                          <i class="fa fa-file" aria-hidden="true"></i></button
+                        >&nbsp;
+                        <button _ngcontent-qng-c3="" class="btn btn-success btn-xs">
+                          <i class="fa fa-plane" aria-hidden="true"></i></button
+                        >&nbsp;
+                        <button _ngcontent-qng-c3="" class="btn btn-danger btn-xs">
+                          <i class="fa fa-upload" aria-hidden="true"></i></button
+                        >&nbsp;
+                        <button _ngcontent-qng-c3="" class="btn btn-warning btn-xs">
+                          <i class="fa fa-download" aria-hidden="true"></i>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>35AI800103</td>
+                      <td>ZODIAC SEATS FRANCE</td>
+                      <td>ZODIAC SEATS TUNISIE</td>
+                      <td>CHARLES DE GAULLE APT/PARIS</td>
+                      <td>TUNIS</td>
+                      <td>08/02/2018 08:45</td>
+                      <td>09/02/2018 20:30</td>
+                      <td>
+                        <button
+                          _ngcontent-qng-c3=""
+                          class="btn btn-primary btn-xs"
+                          data-toggle="modal"
+                          data-target=".bd-example-modal-lg"
+                        >
+                          <i class="fa fa-file" aria-hidden="true"></i></button
+                        >&nbsp;
+                        <button
+                          _ngcontent-qng-c3=""
+                          class="btn btn-success btn-xs"
+                          data-toggle="modal"
+                          data-target="#exampleModalCenter"
+                        >
+                          <i class="fa fa-plane" aria-hidden="true"></i></button
+                        >&nbsp;
+                        <button _ngcontent-qng-c3="" class="btn btn-danger btn-xs">
+                          <i class="fa fa-upload" aria-hidden="true"></i></button
+                        >&nbsp;
+                        <button _ngcontent-qng-c3="" class="btn btn-warning btn-xs">
+                          <i class="fa fa-download" aria-hidden="true"></i>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>35AI800103</td>
+                      <td>ZODIAC SEATS FRANCE</td>
+                      <td>ZODIAC SEATS TUNISIE</td>
+                      <td>CHARLES DE GAULLE APT/PARIS</td>
+                      <td>TUNIS</td>
+                      <td>08/02/2018 08:45</td>
+                      <td>09/02/2018 20:30</td>
+                      <td>
+                        <button
+                          _ngcontent-qng-c3=""
+                          class="btn btn-primary btn-xs"
+                          data-toggle="modal"
+                          data-target=".bd-example-modal-lg"
+                        >
+                          <i class="fa fa-file" aria-hidden="true"></i></button
+                        >&nbsp;
+                        <button _ngcontent-qng-c3="" class="btn btn-success btn-xs">
+                          <i class="fa fa-plane" aria-hidden="true"></i></button
+                        >&nbsp;
+                        <button _ngcontent-qng-c3="" class="btn btn-danger btn-xs">
+                          <i class="fa fa-upload" aria-hidden="true"></i></button
+                        >&nbsp;
+                        <button _ngcontent-qng-c3="" class="btn btn-warning btn-xs">
+                          <i class="fa fa-download" aria-hidden="true"></i>
+                        </button>
+                      </td>
+                    </tr>
+                  </tbody>
+                  <tfoot>
+                    <tr>
+                      <th>Num Dossier</th>
+                      <th>Expéditeur</th>
+                      <th>Destinataire</th>
+                      <th>Point de Sortie</th>
+                      <th>Point d'entrée</th>
+                      <th>Date d'enlèvement</th>
+                      <th>Date de livraison</th>
+                      <th>#</th>
+                    </tr>
+                  </tfoot>
+                </table>
+              </div>
+              </div>
+            </div>
+          
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end page content -->
+<!-- start chat sidebar -->
+<div class="chat-sidebar-container" data-close-on-body-click="false">
+  <div class="chat-sidebar">
+    <ul class="nav nav-tabs">
+      <li class="nav-item">
+        <a
+          href="#quick_sidebar_tab_1"
+          class="nav-link active tab-icon"
+          data-toggle="tab"
+        >
+          <i class="material-icons">chat</i>Chat
+          <span class="badge badge-danger">4</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a
+          href="#quick_sidebar_tab_3"
+          class="nav-link tab-icon"
+          data-toggle="tab"
+        >
+          <i class="material-icons">settings</i>
+          Settings
+        </a>
+      </li>
+    </ul>
+    <div class="tab-content">
+      <!-- Start User Chat -->
+      <div
+        class="tab-pane active chat-sidebar-chat in active show"
+        role="tabpanel"
+        id="quick_sidebar_tab_1"
+      >
+        <div class="chat-sidebar-list">
+          <div
+            class="chat-sidebar-chat-users slimscroll-style"
+            data-rail-color="#ddd"
+            data-wrapper-class="chat-sidebar-list"
+          >
+            <div class="chat-header">
+              <h5 class="list-heading">Online</h5>
+            </div>
+            <ul class="media-list list-items">
+              <li class="media">
+                <img
+                  class="media-object"
+                  src="../assets/img/prof/prof3.jpg"
+                  width="35"
+                  height="35"
+                  alt="..."
+                />
+                <i class="online dot"></i>
+                <div class="media-body">
+                  <h5 class="media-heading">John Deo</h5>
+                  <div class="media-heading-sub">Spine Surgeon</div>
+                </div>
+              </li>
+              <li class="media">
+                <div class="media-status">
+                  <span class="badge badge-success">5</span>
+                </div>
+                <img
+                  class="media-object"
+                  src="../assets/img/prof/prof1.jpg"
+                  width="35"
+                  height="35"
+                  alt="..."
+                />
+                <i class="busy dot"></i>
+                <div class="media-body">
+                  <h5 class="media-heading">Rajesh</h5>
+                  <div class="media-heading-sub">Director</div>
+                </div>
+              </li>
+              <li class="media">
+                <img
+                  class="media-object"
+                  src="../assets/img/prof/prof5.jpg"
+                  width="35"
+                  height="35"
+                  alt="..."
+                />
+                <i class="away dot"></i>
+                <div class="media-body">
+                  <h5 class="media-heading">Jacob Ryan</h5>
+                  <div class="media-heading-sub">Ortho Surgeon</div>
+                </div>
+              </li>
+              <li class="media">
+                <div class="media-status">
+                  <span class="badge badge-danger">8</span>
+                </div>
+                <img
+                  class="media-object"
+                  src="../assets/img/prof/prof4.jpg"
+                  width="35"
+                  height="35"
+                  alt="..."
+                />
+                <i class="online dot"></i>
+                <div class="media-body">
+                  <h5 class="media-heading">Kehn Anderson</h5>
+                  <div class="media-heading-sub">CEO</div>
+                </div>
+              </li>
+              <li class="media">
+                <img
+                  class="media-object"
+                  src="../assets/img/prof/prof2.jpg"
+                  width="35"
+                  height="35"
+                  alt="..."
+                />
+                <i class="busy dot"></i>
+                <div class="media-body">
+                  <h5 class="media-heading">Sarah Smith</h5>
+                  <div class="media-heading-sub">Anaesthetics</div>
+                </div>
+              </li>
+              <li class="media">
+                <img
+                  class="media-object"
+                  src="../assets/img/prof/prof7.jpg"
+                  width="35"
+                  height="35"
+                  alt="..."
+                />
+                <i class="online dot"></i>
+                <div class="media-body">
+                  <h5 class="media-heading">Vlad Cardella</h5>
+                  <div class="media-heading-sub">Cardiologist</div>
+                </div>
+              </li>
+            </ul>
+            <div class="chat-header">
+              <h5 class="list-heading">Offline</h5>
+            </div>
+            <ul class="media-list list-items">
+              <li class="media">
+                <div class="media-status">
+                  <span class="badge badge-warning">4</span>
+                </div>
+                <img
+                  class="media-object"
+                  src="../assets/img/prof/prof6.jpg"
+                  width="35"
+                  height="35"
+                  alt="..."
+                />
+                <i class="offline dot"></i>
+                <div class="media-body">
+                  <h5 class="media-heading">Jennifer Maklen</h5>
+                  <div class="media-heading-sub">Nurse</div>
+                  <div class="media-heading-small">Last seen 01:20 AM</div>
+                </div>
+              </li>
+              <li class="media">
+                <img
+                  class="media-object"
+                  src="../assets/img/prof/prof8.jpg"
+                  width="35"
+                  height="35"
+                  alt="..."
+                />
+                <i class="offline dot"></i>
+                <div class="media-body">
+                  <h5 class="media-heading">Lina Smith</h5>
+                  <div class="media-heading-sub">Ortho Surgeon</div>
+                  <div class="media-heading-small">Last seen 11:14 PM</div>
+                </div>
+              </li>
+              <li class="media">
+                <div class="media-status">
+                  <span class="badge badge-success">9</span>
+                </div>
+                <img
+                  class="media-object"
+                  src="../assets/img/prof/prof9.jpg"
+                  width="35"
+                  height="35"
+                  alt="..."
+                />
+                <i class="offline dot"></i>
+                <div class="media-body">
+                  <h5 class="media-heading">Jeff Adam</h5>
+                  <div class="media-heading-sub">Compounder</div>
+                  <div class="media-heading-small">Last seen 3:31 PM</div>
+                </div>
+              </li>
+              <li class="media">
+                <img
+                  class="media-object"
+                  src="../assets/img/prof/prof10.jpg"
+                  width="35"
+                  height="35"
+                  alt="..."
+                />
+                <i class="offline dot"></i>
+                <div class="media-body">
+                  <h5 class="media-heading">Anjelina Cardella</h5>
+                  <div class="media-heading-sub">Physiotherapist</div>
+                  <div class="media-heading-small">Last seen 7:45 PM</div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- End User Chat -->
+      <!-- Start Setting Panel -->
+      <div
+        class="tab-pane chat-sidebar-settings"
+        role="tabpanel"
+        id="quick_sidebar_tab_3"
+      >
+        <div class="chat-sidebar-settings-list slimscroll-style">
+          <div class="chat-header">
+            <h5 class="list-heading">Layout Settings</h5>
+          </div>
+          <div class="chatpane inner-content ">
+            <div class="settings-list">
+              <div class="setting-item">
+                <div class="setting-text">Sidebar Position</div>
+                <div class="setting-set">
+                  <select
+                    class="sidebar-pos-option form-control input-inline input-sm input-small "
+                  >
+                    <option value="left" selected="selected">Left</option>
+                    <option value="right">Right</option>
+                  </select>
+                </div>
+              </div>
+              <div class="setting-item">
+                <div class="setting-text">Header</div>
+                <div class="setting-set">
+                  <select
+                    class="page-header-option form-control input-inline input-sm input-small "
+                  >
+                    <option value="fixed" selected="selected">Fixed</option>
+                    <option value="default">Default</option>
+                  </select>
+                </div>
+              </div>
+              <div class="setting-item">
+                <div class="setting-text">Footer</div>
+                <div class="setting-set">
+                  <select
+                    class="page-footer-option form-control input-inline input-sm input-small "
+                  >
+                    <option value="fixed">Fixed</option>
+                    <option value="default" selected="selected">Default</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="chat-header">
+              <h5 class="list-heading">Account Settings</h5>
+            </div>
+            <div class="settings-list">
+              <div class="setting-item">
+                <div class="setting-text">Notifications</div>
+                <div class="setting-set">
+                  <div class="switch">
+                    <label
+                      class="mdl-switch mdl-js-switch mdl-js-ripple-effect"
+                      for="switch-1"
+                    >
+                      <input
+                        type="checkbox"
+                        id="switch-1"
+                        class="mdl-switch__input"
+                        checked
+                      />
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="setting-item">
+                <div class="setting-text">Show Online</div>
+                <div class="setting-set">
+                  <div class="switch">
+                    <label
+                      class="mdl-switch mdl-js-switch mdl-js-ripple-effect"
+                      for="switch-7"
+                    >
+                      <input
+                        type="checkbox"
+                        id="switch-7"
+                        class="mdl-switch__input"
+                        checked
+                      />
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="setting-item">
+                <div class="setting-text">Status</div>
+                <div class="setting-set">
+                  <div class="switch">
+                    <label
+                      class="mdl-switch mdl-js-switch mdl-js-ripple-effect"
+                      for="switch-2"
+                    >
+                      <input
+                        type="checkbox"
+                        id="switch-2"
+                        class="mdl-switch__input"
+                        checked
+                      />
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="setting-item">
+                <div class="setting-text">2 Steps Verification</div>
+                <div class="setting-set">
+                  <div class="switch">
+                    <label
+                      class="mdl-switch mdl-js-switch mdl-js-ripple-effect"
+                      for="switch-3"
+                    >
+                      <input
+                        type="checkbox"
+                        id="switch-3"
+                        class="mdl-switch__input"
+                        checked
+                      />
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="chat-header">
+              <h5 class="list-heading">General Settings</h5>
+            </div>
+            <div class="settings-list">
+              <div class="setting-item">
+                <div class="setting-text">Location</div>
+                <div class="setting-set">
+                  <div class="switch">
+                    <label
+                      class="mdl-switch mdl-js-switch mdl-js-ripple-effect"
+                      for="switch-4"
+                    >
+                      <input
+                        type="checkbox"
+                        id="switch-4"
+                        class="mdl-switch__input"
+                        checked
+                      />
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="setting-item">
+                <div class="setting-text">Save Histry</div>
+                <div class="setting-set">
+                  <div class="switch">
+                    <label
+                      class="mdl-switch mdl-js-switch mdl-js-ripple-effect"
+                      for="switch-5"
+                    >
+                      <input
+                        type="checkbox"
+                        id="switch-5"
+                        class="mdl-switch__input"
+                        checked
+                      />
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="setting-item">
+                <div class="setting-text">Auto Updates</div>
+                <div class="setting-set">
+                  <div class="switch">
+                    <label
+                      class="mdl-switch mdl-js-switch mdl-js-ripple-effect"
+                      for="switch-6"
+                    >
+                      <input
+                        type="checkbox"
+                        id="switch-6"
+                        class="mdl-switch__input"
+                        checked
+                      />
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end chat sidebar -->
+
+<!-- end page container -->
+
+<!-- Data Table -->
+
+<!-- Modal -->
+
+<div
+  class="modal fade bd-example-modal-lg"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="myLargeModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">DÉTAILS DOSSIER</h5>
+        <button
+          type="button"
+          class="close"
+          data-dismiss="modal"
+          aria-label="Close"
+        >
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="col">
+          <div class="card card-topline-green">
+            <div class="card-head">
+              <header>Informations</header>
+              <div class="tools">
+                <a
+                  class="fa fa-repeat btn-color box-refresh"
+                  href="javascript:;"
+                ></a>
+                <a
+                  class="t-collapse btn-color fa fa-chevron-down"
+                  href="javascript:;"
+                ></a>
+                <a
+                  class="t-close btn-color fa fa-times"
+                  href="javascript:;"
+                ></a>
+              </div>
+            </div>
+            <div class="card-body ">
+              <div class="table-scrollable">
+                <table class="table">
+                  <tbody>
+                    <tr>
+                      <td>Numéro du dossier</td>
+                      <td>35AI800103</td>
+                    </tr>
+                    <tr>
+                      <td>Expéditeur</td>
+                      <td>ZODIAC SEATS FRANCE</td>
+                    </tr>
+                    <tr>
+                      <td>Adresse expéditeur</td>
+                      <td>RUE ROBERT MARECHAL SENIOR ZI LA LIMOISE 36100</td>
+                    </tr>
+                    <tr>
+                      <td>Destinataire</td>
+                      <td>ZODIAC SEATS TUNISIE</td>
+                    </tr>
+                    <tr>
+                      <td>Adresse destinataire</td>
+                      <td>ROUTE DE TUNIS KM 6 EL DHARI BP 224 8020</td>
+                    </tr>
+                    <tr>
+                      <td>Chauffeur</td>
+                      <td>IPC</td>
+                    </tr>
+                    <tr>
+                      <td>Immatricule du cammion</td>
+                      <td>EL433XC</td>
+                    </tr>
+                    <tr>
+                      <td>Airline</td>
+                      <td>EXPRESS AIR CARGO</td>
+                    </tr>
+                    <tr>
+                      <td>Vol N°</td>
+                      <td>7A111/09</td>
+                    </tr>
+                    <tr>
+                      <td>Chargée à</td>
+                      <td>CDG CHARLES DE GAULLE APT/PARIS</td>
+                    </tr>
+                    <tr>
+                      <td>Déchargée à</td>
+                      <td>TUN TUNIS</td>
+                    </tr>
+                    <tr>
+                      <td>EUR1 N°</td>
+                      <td>7A111/09</td>
+                    </tr>
+                    <tr>
+                      <td>T1</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>LTA</td>
+                      <td>23140110</td>
+                    </tr>
+                    <tr>
+                      <td>N° de la facture</td>
+                      <td>20180208A</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div
+  class="modal fade bd-SUIVIDOSSIER-modal-lg"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="myLargeModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="card card-topline-red">
+          <div class="card-head">
+            <header>SUIVI DOSSIER</header>
+            <div class="tools">
+              <a
+                class="fa fa-repeat btn-color box-refresh"
+                href="javascript:;"
+              ></a>
+              <a
+                class="t-collapse btn-color fa fa-chevron-down"
+                href="javascript:;"
+              ></a>
+              <a class="t-close btn-color fa fa-times" href="javascript:;"></a>
+            </div>
+          </div>
+          <div class="card-body ">
+            <div class="table-scrollable">
+              <table class="table table-striped table-hover">
+                <thead>
+                  <tr>
+                    <th>Num Dossier</th>
+                    <th>Evènement</th>
+                    <th>Description</th>
+                    <th>Date</th>
+                    <th>Heure</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>35AI800103</td>
+                    <td>
+                      <img
+                        src="../../assets/img/import/Korawan_M_business12-512.png"
+                        style="width: 50px;"
+                      />
+                    </td>
+                    <td>Enlèvement</td>
+                    <td>08/02/2018</td>
+                    <td>08:45</td>
+                  </tr>
+                  <tr>
+                    <td>35AI800103</td>
+                    <td>
+                      <img
+                        src="../../assets/img/import/airport-boarding-corridor-passenger-plane-icon-boarding-the-plane-png-512_512.png"
+                        style="width: 70px;"
+                      />
+                    </td>
+                    <td>Embarquement</td>
+                    <td>09/02/2018</td>
+                    <td>12:10</td>
+                  </tr>
+                  <tr>
+                    <td>35AI800103</td>
+                    <td>
+                      <img
+                        src="../../assets/img/import/order_tracking-512.png"
+                        style="width: 60px;"
+                      />
+                    </td>
+                    <td>Mise en livraison</td>
+                    <td>09/02/2018</td>
+                    <td>19:00</td>
+                  </tr>
+                  <tr>
+                    <td>35AI800103</td>
+                    <td>
+                      <img
+                        src="../../assets/img/import/Korawan_M_business12-512.png"
+                        style="width: 50px;"
+                      />
+                    </td>
+                    <td>Livraison</td>
+                    <td>09/02/2018</td>
+                    <td>20:30</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">
+          Fermer
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
