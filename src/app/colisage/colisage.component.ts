@@ -13,7 +13,7 @@ export class ColisageComponent implements OnInit {
     this.newDynamic = { title1: "", title2: "", title3: "" };
     this.dynamicArray.push(this.newDynamic);
   }
-  addRow(index) {
+  addRow() {
     this.newDynamic = { title1: "", title2: "", title3: "" };
     this.dynamicArray.push(this.newDynamic);
     // this.toastr.success("New row added successfully", "New Row");
